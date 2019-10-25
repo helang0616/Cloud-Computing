@@ -18,6 +18,12 @@ sudo yum install httpd
 sudo systemctl start httpd.service
 ```
 
+***设置开机自启***
+
+```
+systemctl enable httpd.service
+```
+
 访问服务器公网IP,出现下图代表Apache安装成功
 
 ![](../image/22.png)
