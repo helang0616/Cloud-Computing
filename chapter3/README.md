@@ -86,7 +86,7 @@ docker exec -it f14 /bin/bash
 
 ### 4.推送带有wordpress的镜像
 
-***将容器生成镜像(所生成的镜像名开头必须是   "Docker用户名/"  ，否则会报错： denied: requested access to the resource is denied )***
+***将容器生成镜像  (所生成的镜像名由   "Docker用户名/Docker仓库名"  ，否则推送会报错： denied: requested access to the resource is denied )***
 
 ```
 docker commit -a "Docker用户名" -m "提交描述" 容器id 镜像名:tag标签
@@ -105,3 +105,7 @@ docker login
 docker push 镜像名:tag标签
 # 举例  docker push 1481604320/centos:v1
 ```
+
+***登录Docker网页查看仓库***
+
+![](../image/32.png)
