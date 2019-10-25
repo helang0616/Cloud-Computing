@@ -12,3 +12,7 @@
 
 2.1[搭建WordPress创建个人网站](./chapter2/)
 
+## 3.Docker基础实验
+
+3.1[Docker基础实验](./chapter3/)
+
