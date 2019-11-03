@@ -88,7 +88,7 @@ docker exec -it f14 /bin/bash
 
 ***前往[docker hub]( https://hub.docker.com/ )注册账号，下面需要用到。***
 
-***将容器生成镜像  (所生成的镜像名由   "Docker用户名/Docker仓库名"  ，否则推送会报错： denied: requested access to the resource is denied )***
+***将容器生成镜像  (所生成的镜像名由   "Docker用户名/Docker仓库名组成"  ，否则推送会报错： denied: requested access to the resource is denied )***
 
 ```
 docker commit -a "Docker用户名" -m "提交描述" 容器id 镜像名:tag标签
