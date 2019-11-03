@@ -54,7 +54,7 @@ docker images
 
 ![****](../image/30.png)
 
-***运行Docker容器（为了方便检测后续wordpress搭建是否成功，需设置端口映射（-p），将容器端口80 映射到主机端口8888，Apache和MySQL需要 systemctl 管理服务启动，需要加上参数 --privileged 来增加权，并且不能使用默认的bash，换成 init，否则会提示 Failed to get D-Bus connection: Operation not permitted ，命令如下 ）***
+***运行Docker容器（为了方便检测后续wordpress搭建是否成功，需设置端口映射（-p），将容器端口80 映射到主机端口8888，Apache和MySQL需要 systemctl 管理服务启动，需要加上参数 --privileged 来增加权，并且不能使用默认的bash，换成 init，否则会提示 Failed to get D-Bus connection: Operation not permitted ，，-name 容器名  ，命令如下 ）***
 
 ```
 docker run -d -it --privileged --name wordpress -p 8888:80 -d centos:7 /usr/sbin/init
@@ -78,13 +78,15 @@ docker exec -it f14 /bin/bash
 
 ### 3.容器中安装wordpress
 
-参照[**CentOS上搭建WordPress博客**](../chapter2/)
+参照[**CentOS上搭建WordPress博客**](../chapter2/)（该教程里访问公网IP都需加上端口  :8888)
 
 安装完成后可通过浏览器访问  <u>服务器IP:8888</u> 查看
 
 
 
 ### 4.推送带有wordpress的镜像
+
+***前往[docker hub]( https://hub.docker.com/ )注册账号，下面需要用到。***
 
 ***将容器生成镜像  (所生成的镜像名由   "Docker用户名/Docker仓库名"  ，否则推送会报错： denied: requested access to the resource is denied )***
 
