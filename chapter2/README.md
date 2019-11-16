@@ -145,7 +145,7 @@ wget http://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz
 sudo rsync -avP ~/wordpress/ /var/www/html/
 mkdir /var/www/html/wp-content/uploads
-sudo chown -R apache:apache /var/www/html/*
+sudo chown -R apache:apache /var/www/
 ```
 
 接下来访问你的服务器公网IP，就能进入WordPress安装的web页
