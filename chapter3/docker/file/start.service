@@ -1,0 +1,12 @@
+[Unit]
+Description=start
+After=mariadb.service
+
+
+[Service]
+Type=forking
+ExecStart=/root/start.sh
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
