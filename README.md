@@ -14,5 +14,6 @@
 
 ## 3.Docker基础实验
 
-3.1[Docker基础实验](./chapter3/)
+3.1[Docker基础实验](./chapter3/1.md)
 
+3.2[Dockerfile构建Apache+PHP+Mariadb+Wordpress](./chapter3/2.md)
