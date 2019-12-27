@@ -17,3 +17,8 @@
 3.1[Docker基础实验](./chapter3/1.md)
 
 3.2[Dockerfile构建Apache+PHP+Mariadb+Wordpress](./chapter3/2.md)
+
+## 4.分布式存储
+
+4.1[Ceph](./chapter4/)
+
